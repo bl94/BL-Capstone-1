@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-y16 = pd.read_spss('/Users/bn/Galvanize/Capstone/GSS2016.sav', usecols=[
+y16 = pd.read_spss('/Users/bn/Galvanize/Capstone1/GSS2016.sav', usecols=[
     'RHLTHEND', 'CESD1', 'CESD3', 'TWITTER', 'FACEBOOK', 'USUALHRS',
     'INTWKDYH', 'NOGO',  'NEWS', 'TVHOURS', 'STRESSWK'])
 
@@ -197,3 +197,7 @@ health_dep_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_
 
 hap_corr = np.mean(health_hap_corr)
 dep_corr = np.mean(health_dep_corr)
+
+
+print(len(hap_corr))
+print(np.mean(hap_corr))
