@@ -167,7 +167,7 @@ ax.set_ylabel('Respondents', size=15)
 
 
 
-def bootstrap_correlation_confidence_interval(a, v, stat_function=np.correlate, iterations=10000, ci=95):
+def bootstrap_correlation_confidence_interval(a, v, stat_function=np.corrcoef, iterations=10000, ci=95):
     '''
     sample: Numpy array
         1-d numeric data
@@ -194,3 +194,6 @@ def bootstrap_correlation_confidence_interval(a, v, stat_function=np.correlate, 
 
 health_hap_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_hap'])
 health_dep_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_hap'])
+
+hap_corr = np.mean(health_hap_corr)
+dep_corr = np.mean(health_dep_corr)
