@@ -1,7 +1,7 @@
 # BL-Capstone-1
-# Capstone 1 Presentation
+# An exploration of health related data from the General Social Survey
 
-### For this capstone I used data from the General Social Survey (GSS).  The GSS is one of the most influential studies in the social sciences.  The data collected in the survey includes demographic, financial, health, educational information and much more.   Something that makes this study so valuable is that it also includes respondents' opinions and beliefs on matters like government spending, the state of race relations, science, technology, and even philosophies about the nature of life.  For this capstone I set out to explore connections between overall health and other variables.
+### For this project I used data from the 2016 administration of the General Social Survey (GSS).  The GSS is one of the most influential studies in the social sciences.  The data collected in the survey includes demographic, financial, health, educational information and much more.   Something that makes this study so valuable is that it also includes respondents' opinions and beliefs on matters like government spending, the state of race relations, science, technology, and even philosophies about the nature of life.  For this capstone I set out to explore connections between overall health and other variables.
 
 <br>
 
