@@ -1,7 +1,7 @@
 # BL-Capstone-1
 # An exploration of health related data from the General Social Survey
 
-### For this project I used data from the 2016 administration of the General Social Survey (GSS).  The GSS is one of the most influential studies in the social sciences.  The data collected in the survey includes demographic, financial, health, educational information and much more.   Something that makes this study so valuable is that it also includes respondents' opinions and beliefs on matters like government spending, the state of race relations, science, technology, and even philosophies about the nature of life.  For this capstone I set out to explore connections between overall health and other variables.
+### The GSS is one of the most influential studies in the social sciences.  The data collected in the survey includes demographic, financial, health, educational data and much more.   Something that makes this study so valuable is that it also includes respondents' opinions and beliefs on matters like government spending, the state of race relations, science, technology, and even philosophies about the nature of life.  For this project I set out to explore connections between overall health and other variables from the 2016 administration of the survey.
 
 <br>
 
@@ -13,7 +13,7 @@ ______________________________________
 ### Alternative:  Health **is** related to feeling happy more often.
 ______________________________________
 
-###  A large amount of time was given to data wrangling and variable exploration.  Using only data from the 2016 administration of the survey, I created scales from respondents answers to be able to make some insightful calculations.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question I would convert those four answers to a number scale from 1-4.  Then, I moved on to creating some simple plots and the heatmap shown below to start visualizing the distributions and correlations of the variables.
+###  A large amount of time was given to data wrangling and variable exploration.  I created scales from respondents answers to be able to make some insightful calculations.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question I would convert those four answers to a number scale from 1-4.  Then, I moved on to creating some simple plots and the heatmap shown below to start visualizing the distributions and correlations of the variables.
 
 <br>
 
