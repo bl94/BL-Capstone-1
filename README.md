@@ -7,7 +7,11 @@
 
 ![GSS logo](/images/gss.jpg)
 ______________________________________
+### **Hypotheses**
 
+### Null:   Health **is not** related to feeling happy more often.
+### Alternative:  Health **is** related to feeling happy more often.
+______________________________________
 <br>
 
 ###  A large amount of time was given to data wrangling and variable exploration.  Using only data from the 2016 administration of the survey, I created scales from respondents answers to be able to make some insightful calculations.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question I would convert those four answers to a number scale from 1-4.  Then, I moved on to creating some simple plots and the heatmap shown below to start visualizing the distributions and correlations of the variables.
@@ -32,11 +36,6 @@ ______________________________________
 
 ______________________________________
 
-### **Hypotheses**
-
-### Null:   Health **is not** related to feeling happy more often.
-### Alternative:  Health **is** related to feeling happy more often.
-______________________________________
 
 
 ### Omitting the NaNs from the data to make more accurate calculations reduced my samples to the hundreds.  But there was still enough there for resampling with the bootstrap technique. Using 95% confidence intervals, I found that bootstrapping with 10,000 iterations produced normal distributions for each variable and the means of the bootstrapped samples aligned with the means of the original samples.  This was a good indication that the sample data was representative of the population at the time the data was collected in 2016.
