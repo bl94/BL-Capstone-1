@@ -13,7 +13,7 @@ ______________________________________
 ### Alternative:  Health **is** related to feeling happy more often.
 ______________________________________
 
-###  A large amount of time was given to data wrangling and variable exploration.  I created scales from respondents answers to be able to make some insightful calculations.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question I would convert those four answers to a number scale from 1-4.  Then, I moved on to creating some simple plots and the heatmap shown below to start visualizing the distributions and correlations of the variables.
+###  The graphs and correlation heatmap below represent data from a range of different survey questions/answers.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question those four answers were converted to a number scale from 1-4.
 
 <br>
 
@@ -25,7 +25,7 @@ ______________________________________
 ______________________________________
 
 
-### To keep my presentation within the given time limit and to be able to show something with a reasonable level of validity, I chose a set of three variables to compare from the 2016 survey:  Health, Time feeling happy, and Time feeling depressed.  
+### To present something here with a reasonable level of validity, I chose a set of three variables to compare from the 2016 survey:  Health, Time feeling happy, and Time feeling depressed.  
 <br>
 
 ![GSS logo](/images/Health_hap_dep.png)
@@ -37,7 +37,7 @@ ______________________________________
 
 
 
-### Omitting the NaNs from the data to make more accurate calculations reduced my samples to the hundreds.  But there was still enough there for resampling with the bootstrap technique. Using 95% confidence intervals, I found that bootstrapping with 10,000 iterations produced normal distributions for each variable and the means of the bootstrapped samples aligned with the means of the original samples.  This was a good indication that the sample data was representative of the population at the time the data was collected in 2016.
+### Using 95% confidence intervals, I found that bootstrapping with 10,000 iterations produced normal distributions for each variable and the means of the bootstrapped samples aligned with the means of the original samples.  This is a good indication that the sample data was representative of the population at the time the data was collected in 2016.
 <br>
 
 ![health ci](/images/health_ci.png)
@@ -53,7 +53,7 @@ ______________________________________
 ______________________________________
 
 
-### Next, I bootstrapped the correlations between variables.  The bootstrapped correlation results suggested that what was shown by the sample data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result I was able to reject my null hypothesis and confidently say that there is a strong relationship between overall health and the time a person feels happy.
+### I also bootstrapped correlations and results suggested that what was shown by the sample data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result I was able to reject my null hypothesis and confidently say that there is a strong relationship between overall health and the time a person feels happy.
 
 ______________________________________
 
