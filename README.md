@@ -12,7 +12,6 @@ ______________________________________
 ### Null:   Health **is not** related to feeling happy more often.
 ### Alternative:  Health **is** related to feeling happy more often.
 ______________________________________
-<br>
 
 ###  A large amount of time was given to data wrangling and variable exploration.  Using only data from the 2016 administration of the survey, I created scales from respondents answers to be able to make some insightful calculations.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question I would convert those four answers to a number scale from 1-4.  Then, I moved on to creating some simple plots and the heatmap shown below to start visualizing the distributions and correlations of the variables.
 
@@ -58,8 +57,6 @@ ______________________________________
 
 ______________________________________
 
-
-<br><br>
 
 ### In the future I'll revisit this important dataset with an expanded set of skills and a stronger understanding of how to pull out different variables.  The structure of this dataset did present some unique challenges at this point in my data science studies and I'm excited about further exploring the insight it has to offer. I want uncover more about what the GSS has to say about the ways people change over time and the reasons behind those changes.
 
