@@ -13,7 +13,7 @@ ______________________________________
 ### Alternative:  Health **is** related to feeling happy more often.
 ______________________________________
 
-###  The graphs and correlation heatmap below represent data from a range of different survey questions/answers.  For example for a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question those four answers were converted to a number scale from 1-4.
+###  The graphs and correlation heatmap below represent data from a range of different survey questions/answers.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time."*  For that type of question those four answers were converted to a number scale from 1-4.
 
 <br>
 
