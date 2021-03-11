@@ -25,7 +25,7 @@ ______________________________________
 ______________________________________
 
 
-### To present something here with a reasonable level of validity, I chose a set of three variables to compare from the 2016 survey:  Health, Time feeling happy, and Time feeling depressed.  
+### To present something here with a reasonable level of validity, a set of three variables was chosen to compare from the 2016 survey:  Health, Time feeling happy, and Time feeling depressed.  
 <br>
 
 ![GSS logo](/images/Health_hap_dep.png)
@@ -53,7 +53,7 @@ ______________________________________
 ______________________________________
 
 
-### I also bootstrapped correlations and results suggested that what was shown by the sample data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result I was able to reject my null hypothesis and confidently say that there is a strong relationship between overall health and the time a person feels happy.
+### Correlations between variables were also bootstrapped and results suggested that what was shown by the sample data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result we are able to reject the null hypothesis and confidently say that there is a strong relationship between overall health and the time a person feels happy.
 
 ______________________________________
 
