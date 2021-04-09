@@ -174,7 +174,6 @@ def bootstrap_confidence_interval(sample, stat_function=np.mean, iterations=1000
     return lower_ci, upper_ci, bootstrap_samples_stat
 
 
-
 health_col = normalized_df[normalized_df['health']>0]['health']
 hap_col = normalized_df[normalized_df['felt_hap']>0]['felt_hap']
 dep_col = normalized_df[normalized_df['felt_dep']>0]['felt_dep']
