@@ -236,7 +236,3 @@ def bootstrap_correlation_confidence_interval(a, v, stat_function=np.corrcoef, i
 
 health_hap_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_hap'])
 health_dep_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_hap'])
-
-hap_corr = np.mean(health_hap_corr)
-dep_corr = np.mean(health_dep_corr)
-
