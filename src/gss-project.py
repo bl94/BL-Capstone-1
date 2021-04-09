@@ -12,6 +12,7 @@ y16 = pd.read_spss('/Users/bn/Galvanize/Capstone1/GSS2016.sav', usecols=[
 
 df=y16.copy()
 
+
 '''RHLTHEND TO health'''
 df['RHLTHEND'] = df['RHLTHEND'].astype(str).str.upper()
 
@@ -19,7 +20,6 @@ def convert_to_scale(val):
     answers = {'NAN':-1,'POOR': 1, 'FAIR': 2, 'GOOD': 3, 'EXCELLENT':4}
     return answers.get(val)
 df['health']=df['RHLTHEND'].map(convert_to_scale)
-
 
 
 '''CESD1 TO felt_dep'''
@@ -31,7 +31,6 @@ def convert_to_scale(val):
 df['felt_dep']=df['CESD1'].map(convert_to_scale)
 
 
-
 '''CESD3 TO felt_hap'''
 df['CESD3'] = df['CESD3'].astype(str).str.lower()  
 
@@ -39,7 +38,6 @@ def convert_to_scale(val):
     answers = {'nan':-1,'none or almost none of the time': 1, 'some of the time': 2, 'most of the time': 3, 'all or almost all of the time':4}
     return answers.get(val)
 df['felt_hap']=df['CESD3'].map(convert_to_scale)
-
 
 
 '''STRESSWK TO stress'''
@@ -51,19 +49,12 @@ def convert_to_scale(val):
 df['work stress']=df['STRESSWK'].map(convert_to_scale)
 
 
-
-
-
 df['health'] = df['health'].astype(float)
 df['felt_dep'] = df['felt_dep'].astype(float)
 df['felt_hap'] = df['felt_hap'].astype(float)
 
 
-
 norm_df = df[["health","felt_dep", "felt_hap"]]
-
-
-
 
 column_maxes = norm_df.max()
 df_max = column_maxes.max()
@@ -122,11 +113,7 @@ def bootstrap_confidence_interval(sample, stat_function=np.mean, iterations=1000
 health_col = normalized_df[normalized_df['health']>0]['health']
 hap_col = normalized_df[normalized_df['felt_hap']>0]['felt_hap']
 dep_col = normalized_df[normalized_df['felt_dep']>0]['felt_dep']
-
-
-
 health_ci = bootstrap_confidence_interval(health_col)
-
 
 fig, ax = plt.subplots(figsize=(5,5))
 ax.hist(health_ci[2], edgecolor='k', bins=20)
@@ -136,8 +123,6 @@ ax.set_title('Bootstrapped Means', size=20, color='navy')
 ax.set_xlabel('Health rating', size=15)
 ax.set_ylabel('Respondents', size=15)
 # plt.savefig('health_ci')
-
-
 
 felt_hap_ci = bootstrap_confidence_interval(hap_col)
 fig, ax = plt.subplots(figsize=(5,5))
@@ -150,10 +135,8 @@ ax.set_ylabel('Respondents', size=15)
 # plt.savefig('felt_hap_ci')
 
 
-
 felt_dep_ci = bootstrap_confidence_interval(dep_col)
 fig, ax = plt.subplots(figsize=(5,5))
-
 ax.hist(felt_dep_ci[2], edgecolor='k', bins=20)
 ax.axvline(felt_dep_ci[0], color='red')
 ax.axvline(felt_dep_ci[1], color='red')
@@ -161,9 +144,6 @@ ax.set_title('Bootstrapped Means', size=20, color='navy')
 ax.set_xlabel('Time felt depressed', size=15)
 ax.set_ylabel('Respondents', size=15)
 # plt.savefig('felt_dep_ci')
-
-
-
 
 
 # Needs adjustment.
@@ -190,7 +170,6 @@ def bootstrap_correlation_confidence_interval(a, v, stat_function=np.corrcoef, i
     high_bound = 100. - low_bound
     lower_ci, upper_ci = np.percentile(bootstrap_samples_stat,[low_bound, high_bound])
     return lower_ci, upper_ci, bootstrap_samples_stat
-
 
 health_hap_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_hap'])
 health_dep_corr=bootstrap_correlation_confidence_interval(df['health'],df['felt_hap'])
