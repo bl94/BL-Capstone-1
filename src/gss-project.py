@@ -164,7 +164,6 @@ def bootstrap_confidence_interval(sample, stat_function=np.mean, iterations=1000
     
     ci: int, optional (default=95)
         Percent of distribution encompassed by CI, 0<ci<100
-    
     '''
     
     bootstrap_samples = bootstrap(sample, iterations=iterations)
@@ -225,7 +224,6 @@ def bootstrap_correlation_confidence_interval(a, v, stat_function=np.corrcoef, i
     
     ci: int, optional (default=95)
         Percent of distribution encompassed by CI, 0<ci<100
-    
     '''
     
     sample1 = bootstrap(a, iterations=iterations)
