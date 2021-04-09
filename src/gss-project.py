@@ -87,9 +87,6 @@ def data_overview(df):
     # print('\u0332'.join("TOTAL DUPLICATE ROWS"))
     # print(f' { int(sum(df[df.duplicated()].sum()))} \n\n')
 
-
-    return
-
 def corrs(df, cols, corr_round=2):
     '''
     Prints correlation matrix and heatmap for chosen columns of dataframe.
@@ -128,17 +125,14 @@ df['felt_hap'] = df['felt_hap'].astype(float)
 
 
 norm_df = df[["health","felt_dep", "felt_hap"]]
-
 column_maxes = norm_df.max()
 df_max = column_maxes.max()
 normalized_df = norm_df / df_max
 
 
 fig, axs = plt.subplots(figsize=(7,7))
-
 lst = [normalized_df[normalized_df['health']>0]['health'], normalized_df[normalized_df['felt_hap']>0]['felt_hap'], 
        normalized_df[normalized_df['felt_dep']>0]['felt_dep']]
-
 
 axs.hist(lst, histtype='bar', label=['Health', 'Time felt happy', 'Time felt depressed'], edgecolor='k')
 axs.set_title('Health Ratings and Time Felt Happy/Depressed', size=15, color='navy')
@@ -156,7 +150,6 @@ def bootstrap(x, iterations=10000):
         bootstrap = np.random.choice(x, size=len(x), replace=True)
         lst.append(bootstrap)
     return lst
-
 
 def bootstrap_confidence_interval(sample, stat_function=np.mean, iterations=10000, ci=95):
     '''
@@ -206,7 +199,6 @@ ax.set_title('Bootstrapped Means', size=20, color='navy')
 ax.set_xlabel('Time felt happy', size=15)
 ax.set_ylabel('Respondents', size=15)
 # plt.savefig('felt_hap_ci')
-
 
 felt_dep_ci = bootstrap_confidence_interval(dep_col)
 fig, ax = plt.subplots(figsize=(5,5))
