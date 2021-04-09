@@ -49,6 +49,79 @@ def convert_to_scale(val):
 df['work stress']=df['STRESSWK'].map(convert_to_scale)
 
 
+def data_overview(df):
+    '''
+    Initial EDA on data.
+
+    Parameter
+    ----------
+    df:  pd.DataFrame 
+        A Pandas DataFrame
+
+    Returns
+    ----------
+        First five rows (.head())
+        Shape (.shape)
+        All columns (.columns)
+        Readout of how many non-null values and the dtype for each column (.info())
+        Numerical column stats (.describe())
+        Sum of unique value counts of each column
+        Number of duplicate rows
+        Total of null values per column
+    '''
+
+    print("\u0332".join("HEAD "))
+    print(f'{df.head()} \n\n')
+    print("\u0332".join("SHAPE "))
+    print(f'{df.shape} \n\n')
+    print("\u0332".join("COLUMNS "))
+    print(f'{df.columns}\n\n')
+    print("\u0332".join("INFO "))
+    print(f'{df.info()}\n\n')
+    print("\u0332".join("UNIQUE VALUES "))
+    print(f'{df.nunique()} \n\n')
+    print("\u0332".join("NUMERICAL COLUMN STATS "))
+    print(f'{df.describe()}\n\n')
+    print('\u0332'.join("TOTAL NULL VALUES IN EACH COLUMN"))
+    print(f'{df.isnull().sum()} \n\n')
+    # print('\u0332'.join("TOTAL DUPLICATE ROWS"))
+    # print(f' { int(sum(df[df.duplicated()].sum()))} \n\n')
+
+
+    return
+
+def corrs(df, cols, corr_round=2):
+    '''
+    Prints correlation matrix and heatmap for chosen columns of dataframe.
+    
+    Parameters
+    ----------
+    df: Pandas dataframe
+    
+    cols: list  
+        List of dataframe columns to find correlations for.  
+    
+    corr_round: int
+        Number of decimals to round correlation values to
+    
+    Returns
+    ----------
+    Correlation Matrix: dataframe
+        Matrix of correlations
+
+    Heatmap:  seaborn heatmap
+        Heatmap showing correlations, annotated with correlation values in percentages
+    '''
+
+    df1 = df.copy()
+    df1 = df[cols]
+    corrs = df1.corr().round(corr_round)
+
+    fig, ax = plt.subplots(figsize=(15,10))
+    sns.heatmap(df.corr(), cmap='coolwarm', robust=True, annot=True, fmt='.0%')
+    return corrs
+
+
 df['health'] = df['health'].astype(float)
 df['felt_dep'] = df['felt_dep'].astype(float)
 df['felt_hap'] = df['felt_hap'].astype(float)
