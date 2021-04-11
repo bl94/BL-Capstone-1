@@ -55,6 +55,6 @@ ______________________________________
 ______________________________________
 <br>
 
-### In the future I'll revisit this important dataset with an expanded set of skills and the knowledge and time to pull out a larger, better set of variables.  The structure of this dataset did present some unique challenges at this point in my data science studies and I'm excited about returning to it to explore the insight it has to offer. I want uncover more about what the GSS has to say about the ways people change over time and the reasons behind those changes.
+### In the future I'll revisit this important dataset with an expanded set of skills and the knowledge and time required to pull out a larger, better set of variables.  The structure of this dataset did present some unique challenges at this point in my data science studies and I'm excited about returning to it to explore the insight it has to offer. I want uncover more about what the GSS has to say about the ways people change over time and the reasons behind those changes.
 
 ![wayne](/images/Wayne.png)
