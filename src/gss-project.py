@@ -243,7 +243,7 @@ ax.legend(prop={'size': 9}, edgecolor='k')
 ticks = [1,2,3,4]
 labels = ['1', '2', '3', '4']
 plt.xticks(ticks, labels)
-# plt.show()
+plt.show()
 # plt.savefig('health_ratings_and_feelings')
 plt.close(fig)
 
@@ -304,9 +304,7 @@ ax.axvline(health_ci[1], color='red')
 ax.set_title('Bootstrapped Means for 2016 Health Ratings', size=15, weight='bold', color='navy')
 ax.set_xlabel('Health rating for past year', size=13)
 ax.set_ylabel('# of Respondents', size=13)
-ticks = [1,2,3,4]
-plt.xticks(ticks)
-# plt.show()
+plt.show()
 # plt.savefig('health_ci')
 plt.close(fig)
 
@@ -319,10 +317,7 @@ ax.axvline(felt_hap_ci[1], color='red')
 ax.set_title('Bootstrapped Means for Health/Happiness', size=15, weight='bold', color='navy')
 ax.set_xlabel('Time felt happy in past year', size=14)
 ax.set_ylabel('# of Respondents', size=14)
-ticks = [1,2,3,4]
-labels = ['Almost none', 'Some', 'Most', 'Almost all']
-plt.xticks(ticks, labels)
-# plt.show()
+plt.show()
 # plt.savefig('felt_hap_ci')
 plt.close(fig)
 
@@ -335,9 +330,6 @@ ax.axvline(felt_dep_ci[1], color='red')
 ax.set_title('Bootstrapped Means for Health/Depression', size=16, weight='bold', color='navy')
 ax.set_xlabel('Time felt depressed in past year', size=14)
 ax.set_ylabel('# of Respondents', size=14)
-ticks = [1,2,3,4]
-labels = ['Almost none', 'Some', 'Most', 'Almost all']
-plt.xticks(ticks, labels)
 # plt.show()
 # plt.savefig('felt_dep_ci')
 plt.close(fig)
