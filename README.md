@@ -9,7 +9,7 @@
 ![GSS logo](/images/gss.jpg)
 
 
-###  The graphs and correlation heatmap below represent data from a range of survey questions/answers.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
+###  The graphs and correlation heatmap below represent the distrubution and correlations of data from a range of survey questions/answers.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
 
 <br>
 
