@@ -23,7 +23,6 @@
 #### Hypotheses were created based on the correlations found in the data.
 #### Null:   Health *is not* related to feeling happy more often.
 #### Alternative:  Health *is* related to feeling happy more often.
-<br>
 
 ##### Graph showing the distributions of responses to health and frequency of feelings questions.
 
@@ -32,7 +31,6 @@
 
 ## Bootstrapping
 #### Using 95% confidence intervals, I found that bootstrapping with 10,000 iterations produced normal distributions for each variable and the means of the bootstrapped samples aligned with the means of the original samples.  This is a good indication that the sample data was representative of the population at the time the data was collected in 2016.
-<br>
 
 ![health ci](/images/health_ci.png)
 
