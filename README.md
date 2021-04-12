@@ -16,7 +16,7 @@
 ##### Distribution of each feature after replacing NaNs with the mean of each feature.
 ![GSS logo](/images/resize_initial_vis.png)
 
-###### Heatmap showing correlations.
+##### Heatmap showing correlations.
 ![GSS logo](/images/resize_vis_hm.png)
 
 ______________________________________
