@@ -12,9 +12,9 @@
 
 ______________________________________
 
-####  The graphs and correlation heatmap below represent the distrubutions and correlations of data from a range of survey reponses.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
-
 <br>
+
+####  The graphs and correlation heatmap below represent the distrubutions and correlations of data from a range of survey reponses.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
 
 ##### Distribution of each feature after replacing NaNs with the mean of each feature.
 ![GSS logo](/images/resize_initial_vis.png)
@@ -25,8 +25,8 @@ ______________________________________
 ______________________________________
 #### My hypotheses were based on the correlations found in the data.
 
-#### Null:   Health **is not** related to feeling happy more often.
-#### Alternative:  Health **is** related to feeling happy more often.
+#### Null:   Health *is not* related to feeling happy more often.
+#### Alternative:  Health *is* related to feeling happy more often.
 ______________________________________
 
 <br>
@@ -35,7 +35,7 @@ ______________________________________
 
 ______________________________________
 
-
+<br>
 
 #### Using 95% confidence intervals, I found that bootstrapping with 10,000 iterations produced normal distributions for each variable and the means of the bootstrapped samples aligned with the means of the original samples.  This is a good indication that the sample data was representative of the population at the time the data was collected in 2016.
 <br>
@@ -53,11 +53,11 @@ ______________________________________
 ______________________________________
 
 
-#### Correlations between variables were also bootstrapped and results suggested that what was shown by the sample data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result we are able to reject the null hypothesis and confidently say that there is a strong relationship between overall health and the time a person feels happy.  
+#### Correlations between the variables were also bootstrapped and results showed that the data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result we are able to reject the null hypothesis and confidently say there is a strong relationship between overall health and the time a person feels happy.  This may be because being healthy results in being happier and/or that feeling happy contributes to better health.
 
 ______________________________________
 <br>
 
-#### In the future I'll revisit this important dataset with an expanded set of skills and the knowledge and time required to pull out a larger, better set of variables.  The structure of this dataset did present some unique challenges at this point in my data science studies and I'm excited about returning to it to explore the insight it has to offer. I want uncover more about what the GSS has to say about the ways people change over time and the reasons behind those changes.
+#### In the future I'll revisit this important dataset with an expanded set of skills and the knowledge and time required to pull out a larger, better set of variables.  The structure of this dataset did present some unique challenges at this point in my data science studies and I'm excited about returning to it to explore the insight it has to offer. I want uncover more about what the General Social Survey has to say about the ways people change over time and the reasons behind those changes.
 
 ![wayne](/images/Wayne.png)
