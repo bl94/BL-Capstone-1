@@ -19,11 +19,11 @@
 ##### Correlation heatmap.
 ![GSS logo](/images/resize_vis_hm.png)
 
-______________________________________
+## Hypotheses
 #### Hypotheses were created based on the correlations found in the data.
 #### Null:   Health *is not* related to feeling happy more often.
 #### Alternative:  Health *is* related to feeling happy more often.
-______________________________________
+
 ##### Graph showing the distributions of responses to health and frequency of feelings questions.
 <br>
 
