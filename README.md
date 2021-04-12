@@ -10,10 +10,7 @@
 
 #### After choosing some variables to compare I started by creating some plots to get an idea of the distribution of each variable.  I also created a heatmap to get an overview of their correlations.  To present something reasonably valid in the short time I had available to complete this project, a simple hypothesis and set of three significantly correlated variables was chosen to compare from the 2016 survey:  Health, Time feeling happy, and Time feeling depressed.  I made a plot to show the distributions of those variables alongside eachother to help illustrate their relationship to eachother.  After that, I used bootstrapping to confirm that the sample data could be used to represent of the population and plotted the results.  Finally, I also bootstrapped the correlations to more confidently reject the null hypothesis.
 
-______________________________________
-
-<br>
-
+## Exploratory Data Analysis
 ####  The graphs and correlation heatmap below represent the distrubutions and correlations of data from a range of survey reponses.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
 
 ##### Distribution of each feature after replacing NaNs with the mean of each feature.
@@ -35,8 +32,8 @@ ______________________________________
 
 ______________________________________
 
-<br>
 
+## Bootstrapping
 #### Using 95% confidence intervals, I found that bootstrapping with 10,000 iterations produced normal distributions for each variable and the means of the bootstrapped samples aligned with the means of the original samples.  This is a good indication that the sample data was representative of the population at the time the data was collected in 2016.
 <br>
 
