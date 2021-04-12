@@ -150,7 +150,6 @@ year_16_selected_variables = pd.read_spss('/Users/bn/Galvanize/GSS-Health-and-Ha
 
 df = year_16_selected_variables.copy()
 
-# new dictionaries must be created for each set of answers so functionizing this process wouldn't save time
 '''RHLTHEND TO health'''
 df['RHLTHEND'] = df['RHLTHEND'].astype(str).str.lower()
 def convert_to_scale(val):
@@ -295,7 +294,7 @@ ax.axvline(health_ci[1], color='red')
 ax.set_title('Bootstrapped Means for 2016 Health Ratings', size=15, weight='bold', color='navy')
 ax.set_xlabel('Health rating for past year', size=13)
 ax.set_ylabel('# of Respondents', size=13)
-# plt.show()
+plt.show()
 # plt.savefig('health_ci')
 plt.close(fig)
 
@@ -307,7 +306,7 @@ ax.axvline(felt_hap_ci[1], color='red')
 ax.set_title('Bootstrapped Means for Time Felt Happy', size=15, weight='bold', color='navy')
 ax.set_xlabel('Time felt happy in past year', size=14)
 ax.set_ylabel('# of Respondents', size=14)
-# plt.show()
+plt.show()
 # plt.savefig('felt_hap_ci')
 plt.close(fig)
 
@@ -319,7 +318,7 @@ ax.axvline(felt_dep_ci[1], color='red')
 ax.set_title('Bootstrapped Means for Time Felt Depressed', size=15, weight='bold', color='navy')
 ax.set_xlabel('Time felt depressed in past year', size=14)
 ax.set_ylabel('# of Respondents', size=14)
-# plt.show()
+plt.show()
 # plt.savefig('felt_dep_ci')
 plt.close(fig)
 

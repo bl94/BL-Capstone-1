@@ -2,6 +2,15 @@
 
 ## Capstone 1 for the Galvanize Data Science Immersive
 
+## Technologies Used
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SciPy
+* Scikit-Learn
+
 ## Introduction
 #### The GSS is one of the most influential studies in the social sciences.  Respondents are interviewed in person for about 90 minutes and the information collected includes demographic, health, financial, educational data and much more.  Something that makes this study so valuable is that it also includes respondents' opinions and beliefs on matters like government spending, the state of race relations, science, technology, and even philosophies about the nature of life.  For this project I set out to explore connections between overall health and other variables from the 2016 administration of the survey.
 
