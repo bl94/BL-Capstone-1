@@ -11,21 +11,20 @@
 #### After choosing some variables to compare I started by creating some plots to get an idea of the distribution of each variable.  I also created a heatmap to get an overview of their correlations.  To present something reasonably valid in the short time I had available to complete this project, a simple hypothesis and set of three significantly correlated variables was chosen to compare from the 2016 survey:  Health, Time feeling happy, and Time feeling depressed.  I made a plot to show the distributions of those variables alongside eachother to help illustrate their relationship to eachother.  After that, I used bootstrapping to confirm that the sample data could be used to represent of the population and plotted the results.  Finally, I also bootstrapped the correlations to more confidently reject the null hypothesis.
 
 ## Exploratory Data Analysis
-####  The graphs and correlation heatmap below represent the distrubutions and correlations of data from a range of survey reponses.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
+####  The graphs and correlation heatmap below represent the distrubutions and correlations of data from survey reponses.  For a question like, "How often do you feel happy?" respondents could choose answers like, *"Almost never, Sometimes, A lot of the time, or Almost all the time,"* and those answers were converted to a number scale.
 
-##### Distribution of each feature after replacing NaNs with the mean of each feature.
+##### Distribution of each feature after replacing NaNs with the mean of the feature.
 ![GSS logo](/images/resize_initial_vis.png)
 
-##### Heatmap showing correlations.
+##### Correlation heatmap.
 ![GSS logo](/images/resize_vis_hm.png)
 
 ______________________________________
-#### My hypotheses were based on the correlations found in the data.
-
+#### Hypotheses were created based on the correlations found in the data.
 #### Null:   Health *is not* related to feeling happy more often.
 #### Alternative:  Health *is* related to feeling happy more often.
 ______________________________________
-
+##### Graph showing the distributions of responses to health and frequency of feelings questions.
 <br>
 
 ![GSS logo](/images/Health_hap_dep.png)
