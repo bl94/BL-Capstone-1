@@ -23,13 +23,11 @@
 #### Hypotheses were created based on the correlations found in the data.
 #### Null:   Health *is not* related to feeling happy more often.
 #### Alternative:  Health *is* related to feeling happy more often.
-
-##### Graph showing the distributions of responses to health and frequency of feelings questions.
 <br>
 
-![GSS logo](/images/Health_hap_dep.png)
+##### Graph showing the distributions of responses to health and frequency of feelings questions.
 
-______________________________________
+![GSS logo](/images/Health_hap_dep.png)
 
 
 ## Bootstrapping
@@ -45,8 +43,6 @@ ______________________________________
 <br>
 
 ![health hap ci](images/felt_dep_ci.png)
-
-______________________________________
 
 
 #### Correlations between the variables were also bootstrapped and results showed that the data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result we are able to reject the null hypothesis and confidently say there is a strong relationship between overall health and the time a person feels happy.  This may be because being healthy results in being happier and/or that feeling happy contributes to better health.
