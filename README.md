@@ -45,10 +45,11 @@
 ![health hap ci](images/felt_dep_ci.png)
 
 
-#### Correlations between the variables were also bootstrapped and results showed that the data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result we are able to reject the null hypothesis and confidently say there is a strong relationship between overall health and the time a person feels happy.  This may be because being healthy results in being happier and/or that feeling happy contributes to better health.
+#### Correlations between the variables were also bootstrapped and results showed that the data is a reasonably reliable representation of the relationships between health, feeling happy, and feeling depressed for the population of the United States in 2016.  As a result we are able to reject the null hypothesis and confidently say there is a strong relationship between overall health and the time a person feels happy.  This may be because being healthy results in being happier and/or because feeling happy contributes to better health.
 
-______________________________________
 <br>
+
+## Future Improvements
 
 #### In the future I'll revisit this important dataset with an expanded set of skills and the knowledge and time required to pull out a larger, better set of variables.  The structure of this dataset did present some unique challenges at this point in my data science studies and I'm excited about returning to it to explore the insight it has to offer. I want uncover more about what the General Social Survey has to say about the ways people change over time and the reasons behind those changes.
 
